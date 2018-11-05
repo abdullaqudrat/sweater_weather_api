@@ -6,7 +6,9 @@ class ForecastFacade
 
   def get_forecast
     coordinates = GeocodeService.new(@location).get_coordinates
-    WeatherService.new(coordinates).get_weather
+    raw_weather_data = WeatherService.new(coordinates).get_json
+    binding.pry
+    Weather.new(raw_weather_data)
   end
 
 end
