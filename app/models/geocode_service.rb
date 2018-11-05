@@ -5,16 +5,16 @@ class GeocodeService
   end
 
   def get_coordinates
-    get_json
+    get_json[:results][0][:geometry][:location]
   end
 
   private
     def get_json
-      JSON.parse(response.body, symbolize_name: true)
+      JSON.parse(response.body, symbolize_names: true)
     end
 
     def response
-      conn.get("/maps/api/geocode/json?address=#{@location}&key=#{ENV["google_api_key"]}")
+      conn.get("/maps/api/geocode/json?address=#{@address}&key=#{ENV["google_api_key"]}")
     end
 
     def conn
