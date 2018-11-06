@@ -11,8 +11,10 @@ describe "weather for city API endpoint" do
 
     expect(weather).to be_a(Hash)
     expect(weather).to have_key('data')
-    expect(weather['data']).to have_key('location')
-    expect(weather['data']['location']).to eq('denver,co')
-    expect(weather['data']).to have_key('weather')
+    expect(weather['data']).to have_key('attributes')
+    expect(weather['data']['attributes']).to have_key('location')
+    expect(weather['data']['attributes']['location']).to eq('Denver, CO, USA')
+    expect(weather['data']).to have_key('type')
+    expect(weather['data']['type']).to eq('forecast')
   end
 end
