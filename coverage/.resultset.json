@@ -5,8 +5,20 @@
         1,
         1,
         null
+      ],
+      "/Users/abdullaqudrat/turing/3module/projects/sweater_weather/sweater_weather/app/controllers/api/v1/backgrounds_controller.rb": [
+        1,
+        null,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/abdullaqudrat/turing/3module/projects/sweater_weather/sweater_weather/app/controllers/application_controller.rb": [
+        1,
+        null
       ]
     },
-    "timestamp": 1541529139
+    "timestamp": 1541529536
   }
 }
