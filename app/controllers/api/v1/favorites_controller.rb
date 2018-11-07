@@ -1,7 +1,7 @@
 class Api::V1::FavoritesController < ApplicationController
 
   def index
-    render json: @current_user.favorites
+    render json: FavoritesFacade.new(@current_user.favorites).get_favorites_and_forecast
   end
 
   def create
