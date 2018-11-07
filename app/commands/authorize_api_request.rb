@@ -21,10 +21,9 @@ class AuthorizeApiRequest
 
     def http_auth_header
       if @headers['api_key'].present?
-        return @headers['api_key'].split(' ').last
+        return @headers['api_key']
       else
         errors.add(:token, 'Missing token')
       end
-      nil
     end
 end
