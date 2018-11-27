@@ -43,6 +43,8 @@ gem 'faraday'
 gem 'newrelic_rpm'
 # gem 'active_model_serializers', '0.10'
 gem 'fast_jsonapi'
+# for back end hosting on different server, frontend app hosted on another server
+gem 'rack-cors', require: 'rack/cors'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

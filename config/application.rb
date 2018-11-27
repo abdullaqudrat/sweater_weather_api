@@ -32,5 +32,13 @@ module SweaterWeather
 
     #added for authentication(JWT gem)
     config.autoload_paths << Rails.root.join('lib')
+
+    # added for seperate front end app accessing 
+    config.middleware.insert_before 0, Rack::Cors do
+      allow do
+        origins '*'
+        resource '*', headers: :any, methods: [:get, :post, :options]
+      end
+    end
   end
 end
