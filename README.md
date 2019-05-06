@@ -1,8 +1,14 @@
-Sweater Weather API is an API built with Ruby on Rails. It suuplies endpoints for the user with location/weather/image information sourced from: 
+Sweater Weather API is built with Ruby on Rails. It supplies endpoints for the user with location/weather/image information sourced from: 
 
 * Google's Geocode API
 * Dark Sky API
 * Flickr API
+
+Sweater Weather API was built to provide information for the Sweater Weather App. 
+
+Click [here](https://github.com/abdullaqudrat/sweater_weather_fe) to visit the Sweater Weather App Repo. 
+
+Click [here](https://abdullaqudrat.github.io/sweater_weather_fe/) to visit the live app!
 
 ex requests:
 
